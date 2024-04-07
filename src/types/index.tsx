@@ -2,7 +2,7 @@ export interface CustomInputProps {
   cancel?: boolean;
   className: string;
   placeholder: string;
-  value?: string
+  value?: string;
 }
 
 export interface HeaderProps {
@@ -13,7 +13,7 @@ export interface CustomButtonProps {
   className?: string;
   title: any;
   onClick?: () => void;
-  disabled?: boolean
+  disabled?: boolean;
 }
 
 export interface BadgeProps {
@@ -28,9 +28,23 @@ export interface DialogModalProps {
   value: string;
   handleChange: (e: any) => void;
   onSubmit: () => void;
-  disable: boolean
+  disable: boolean;
+  checked: boolean;
+  onCheckbox: () => void;
 }
 
 export interface MainHeadProps {
   handleToggle: () => void;
+  empty: boolean;
+}
+
+export interface ReviewProps {
+  img: any;
+  name: string;
+  review: string;
+  date: Number;
+  rating: Number;
+  comment: Number;
+  likes: Number;
+  unlike: Number;
 }

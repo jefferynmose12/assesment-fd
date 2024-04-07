@@ -10,7 +10,9 @@ const DialogModal = ({
   value,
   handleChange,
   onSubmit,
-  disable
+  disable,
+  checked,
+  onCheckbox
 }: DialogModalProps) => {
   return (
     <div
@@ -59,6 +61,8 @@ const DialogModal = ({
               <div className="flex items-center">
                 <input
                   type="checkbox"
+                  checked={checked}
+                  onChange={onCheckbox}
                   className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border border-input-border rounded"
                 />
                 <label className="ml-2 block text-sm text-gray-900">
